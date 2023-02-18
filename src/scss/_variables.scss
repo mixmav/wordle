@@ -1,0 +1,37 @@
+$black: rgba(black, 0.8);
+$red: #F05365;
+$blue: #7F7EFF;
+$yellow: #EEC643;
+$yellow: #FFB627;
+$green: #22C55E;
+$darkBlack: #090C08;
+
+
+$primary-color: #ffee00;
+$secondary-color: #FF7598;
+$text-color: #2B0047;
+
+$primary-alt-color: white;
+$colors: (
+	'red': $red,
+	'blue': $blue,
+	'yellow': $yellow,
+	'green': $green,
+	'primary': $primary-color,
+	'darkBlack': $darkBlack,
+);
+
+@mixin media($width){
+	@media only screen and (max-width: $width){
+		@content;
+	}
+}
+
+@mixin media-y($height){
+	@media only screen and (max-height: $height){
+		@content;
+	}
+}
+
+$zIndex-main-page-content: 100;
+$zIndex-game-info-dialog: 1000;
